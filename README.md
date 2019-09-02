@@ -1,11 +1,10 @@
-# Install
+安装
+将文件夹ftp_client复制到项目中
 
-1.  Copy folder **ftp_client** to your project
-2.  Modify project settings.py. Add to INSTALLED_APPS ftp_client application like this:
+修改项目settings.py。像这样添加到INSTALLED_APPS ftp_client应用程序：
 
-        INSTALLED_APPS = (
-            ..., 
-            'ftp_client'
-        )
-
-3.  Include to project urlconf `url(r'^ftp-client/', include('ftp_client.urls', namespace='ftp_client'))`
+INSTALLED_APPS = (
+    ..., 
+    'ftp_client'
+)
+包括项目urlconf url(r'^ftp-client/', include('ftp_client.urls', namespace='ftp_client'))
